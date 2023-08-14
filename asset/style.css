@@ -1,0 +1,145 @@
+@font-face {
+  font-family: poppins;
+  src: url(Fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-reqular;
+  src: url(Fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: ruwudu;
+  src: url(Fonts/Ruwudu-Bold.ttf);
+}
+@font-face {
+  font-family: ruwudu-reqular;
+  src: url(Fonts/Ruwudu-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(rgb(7, 216, 253), rgb(54, 0, 250));
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  border-radius: 8px;
+}
+
+#form {
+  padding: 0px;
+}
+.container h1 {
+  margin-right: auto;
+  font-weight: bolder;
+  font-family: poppins;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.input {
+  border: solid;
+  color: #aea8a8;
+  padding: 15px 10px;
+  padding-right: 115px;
+  display: block;
+  margin-right: 5px;
+}
+.input::placeholder {
+  font-family: ruwudu;
+}
+.add {
+  padding: 15px 20px;
+  background-color: rgba(168, 5, 168, 0.808);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.todos {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.closeButton {
+  display: flex;
+  padding: 20px 20px;
+  background-color: red;
+  background-image: url(Image/trash-bin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.todos li {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: rgb(160, 159, 159);
+  border-radius: 2px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  transition: all 0.5s;
+  font-family: ruwudu-reqular;
+}
+.todos li:hover {
+  background-color: rgb(210, 210, 210);
+}
+.todos li.completed {
+  color: rgb(0, 0, 0);
+  text-decoration: line-through;
+  background-color: rgba(0, 142, 0, 0.68);
+}
+.clearButton {
+  padding: 10px 20px;
+  background-color: rgba(168, 5, 168, 0.808);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin-left: 55px;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+.finishButton {
+  padding: 10px 20px;
+  background-color: rgba(168, 5, 168, 0.808);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 109px;
+}
+p {
+  font-family: poppins-reqular;
+  word-spacing: 4px;
+}
+.delete-button {
+  display: none;
+  margin-left: 300px;
+}
+li:hover .delete-button {
+  display: block;
+}
+small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: purple;
+  font-weight: bolder;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/style.css" />
+    <link
+      rel="stylesheet"
+      href="asset/Plugins/notification/notifications.css"
+    />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <h1>Todo App</h1>
+
+        <div class="input-container">
+          <input
+            type="text"
+            class="input"
+            id="input"
+            placeholder="Add your new todo"
+            autocomplete="off"
+          />
+          <button class="add" id="submitBtn">
+            <img src="asset/Image/add.png" alt="" />
+          </button>
+        </div>
+        <small id="message">Please add some tasks... </small>
+        <ul class="todos" id="todos"></ul>
+
+        <p class="text">
+          You have <span id="liNumber">0</span> pending tasks
+          <button id="resetButton" class="clearButton">Clear All</button>
+        </p>
+      </form>
+    </div>
+    <script src="asset/Plugins/notification/notifications.js"></script>
+    <script src="asset/Plugins/sweetAlert/sweetAlert.js"></script>
+    <script src="asset/script.js"></script>
+  </body>
+</html>
